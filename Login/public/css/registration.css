@@ -1,0 +1,86 @@
+/* public/css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* Adjust width for responsiveness */
+    max-width: 400px;
+    /* Maximum width */
+    margin: auto;
+    /* Center the form */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    /* Full width button */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+    /* Center align the paragraph */
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        /* Full width on smaller screens */
+        padding: 10px;
+        /* Decrease padding */
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        /* Smaller font size for button */
+    }
+}
